@@ -1,0 +1,47 @@
+.testiPage {
+  max-height: auto;
+  padding-top: 3.5rem;
+  padding-bottom: 1.5rem;
+  background: #122947;
+  background-image: url(../images/pattern.png);
+  h2 {
+    color: $white;
+  }
+
+  .tCard {
+    width: 100%;
+    flex-direction: column;
+    margin-top: 20px;
+    .tPhoto {
+      width: 110px;
+      height: 110px;
+
+      img {
+        width: 100%;
+        border-radius: 50%;
+        padding: 5px;
+        border: 2px solid gray;
+      }
+    }
+
+    .tDetails {
+      width: 60%;
+      text-align: center;
+      color: $white;
+      p {
+        &:first-child {
+          font-style: italic;
+          font-family: serif;
+          font-size: 18px;
+        }
+        &:last-child,
+        &:nth-child(2) {
+          margin: 0;
+        }
+        &:last-child {
+          color: red;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rEstate | Home</title>
+
+    <!-- link slick css-->
+    <link rel="stylesheet" type="text/css" href="scss/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="scss/slick/slick-theme.css" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- another font for nav logo -->
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+    <!-- another one -->
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link style.css -->
+    <link rel="stylesheet" href="scss/style.css">
+
+
+</head>
+
+<body>
+
+    <!-- landing section start-->
+    <section class="landingPage" id="home">
+
+        <!-- overlay start -->
+        <div class="overlay has-fade"></div>
+        <!-- overlay end -->
+
+        <!-- navigation start -->
+        <nav class="container flex flex-jc-sb flex-ai-c">
+            <a href="" class="landingPage__logo">rEstate</a>
+
+            <a id="btnHamburger" href="#" class="landingPage__toggle hide-for-desktop">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+
+            <div class="landingPage__links hide-for-mobile flex flex-ai-c">
+                <a href="#home">Home</a>
+                <a href="#listing">Listing</a>
+                <a href="#property">Property</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <a href="submit-property.html" class="button hide-for-mobile"><i class="fa fa-plus-circle"></i>Add
+                Property</a>
+        </nav>
+        <!-- navigation end -->
+
+        <!-- mobile nav mwnu start -->
+        <div class="landingPage__menu has-fade">
+            <a href="#">Home</a>
+            <a href="#">Listing</a>
+            <a href="#">Property</a>
+            <a href="#">Contact</a>
+        </div>
+        <!-- mobile nav menu end -->
+
+        <!-- landing page content start -->
+        <div class="landingPage__content container flex flex-ai-c flex-jc-c">
+            <div class="landingPage__header">
+                <h1>Search Your Next Home</h1>
+                <p>Find new & featured property located in your local city.</p>
+            </div>
+            <!-- serch bar start -->
+            <div class="landingPage__searchBar flex">
+                <div class="searchBar-price flex flex-d-c flex-jc-sb">
+                    <label for="priceRange">Price Range</label>
+                    <input type="text" name="priceRange" placeholder="ex. Neighborhood"></input>
+                </div>
+                <div class="searchBar-location flex flex-d-c flex-jc-sb">
+                    <label for="location">City/Street</label>
+                    <input type="text" list="city" name="location" placeholder="location">
+                    <datalist id="city">
+                        <option value="Surat">
+                        <option value="Rajkot">
+                        <option value="Jamnagar">
+                        <option value="Paris">
+                        <option value="London">
+                        <option value="Vadodara">
+                        <option value="Ahmedabad">
+                    </datalist>
+                </div>
+                <div class="searchBar-type flex flex-d-c flex-jc-c">
+                    <label for="propertyType">Property Type</label>
+                    <!-- <input type="text" name="propertyType" placeholder="Property Type"></input> -->
+                    <select class="dropdown">
+                        <option selected disabled>Property Type</option>
+                        <option>Apartment</option>
+                        <option>Villa</option>
+                        <option>Commercial</option>
+                    </select>
+
+                </div>
+                <div class="searchBar-filter flex">
+                    <div class="filter flex flex-ai-c flex-jc-c">
+                        <i class="fa fa-sliders-h"></i>
+                        <p>Advanced Filter</p>
+                    </div>
+                    <div class="searchBtn flex flex-jc-e">
+                        <a href="" class="button">Search Property</a>
+                    </div>
+                </div>
+            </div>
+            <!-- search bar end -->
+        </div>
+        <!-- landing page content end -->
+
+
+    </section>
+    <!-- landing section end  -->
+
+    <!-- listing section start -->
+    <section class="listingPage" id="listing">
+        <div class="container">
+            <div class="header flex flex-jc-c flex-ai-c">
+                <h2>Recent Listed Property</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nulla non ex quam molestias rerum
+                    doloribus sunt velit voluptates repellendus?</p>
+            </div>
+            <div class="list flex flex-jc-sa flex-ai-c">
+                <div class="card-outer">
+                    <div class="card">
+                        <div class="card__img fade">
+                            <div><img src="images/1.png" alt=""></div>
+                            <div><img src="images/2.png" alt=""></div>
+                            <div><img src="images/3.png" alt=""></div>
+                        </div>
+                        <div class="card__details">
+                            <div class="card__details-btn flex flex-jc-sb flex-ai-c">
+                                <div class="btn-left">
+                                    <a href="#">1 Network</a>
+                                    <a href="#">Villa</a>
+                                </div>
+                                <div class="btn-right">
+                                    <a href="#"><i class="fa fa-heart"></i></a>
+                                </div>
+                            </div>
+                            <div class="card_header">
+                                <h4>5689 Resot Relly Market, Montreal Canada, HAQC445</h4>
+                            </div>
+                            <div class="card_icn flex flex-jc-sb">
+                                <div><a href=""><i class="fa fa-bed"></i> 4 Beds</a></div>
+                                <div><a href=""><i class="fa fa-shower"></i> 3 Bath</a></div>
+                                <div><a href=""><i class="fa fa-directions"></i> 1500 sqft</a></div>
+                            </div>
+                            <div class="card_price flex flex-jc-sb flex-ai-c">
+                                <div>
+                                    <h3>$15,000</h3>
+                                </div>
+                                <div><a href="" class="button1">View Details</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-outer">
+                    <div class="card">
+                        <div class="card__img fade">
+                            <div><img src="images/4.png" alt=""></div>
+                            <div><img src="images/2.png" alt=""></div>
+                            <div><img src="images/5.png" alt=""></div>
+                        </div>
+                        <div class="card__details">
+                            <div class="card__details-btn flex flex-jc-sb flex-ai-c">
+                                <div class="btn-left">
+                                    <a href="#">5 Network</a>
+                                    <a href="#">Family</a>
+                                </div>
+                                <div class="btn-right">
+                                    <a href="#"><i class="fa fa-heart"></i></a>
+                                </div>
+                            </div>
+                            <div class="card_header">
+                                <h4>7012 Shine Sehu Street, Liverpool London, LC345AC</h4>
+                            </div>
+                            <div class="card_icn flex flex-jc-sb">
+                                <div><a href=""><i class="fa fa-bed"></i> 3 Beds</a></div>
+                                <div><a href=""><i class="fa fa-shower"></i> 2 Bath</a></div>
+                                <div><a href=""><i class="fa fa-directions"></i> 800 sqft</a></div>
+                            </div>
+                            <div class="card_price flex flex-jc-sb flex-ai-c">
+                                <div>
+                                    <h3>$7,000</h3>
+                                </div>
+                                <div><a href="" class="button1">View Details</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-outer">
+                    <div class="card">
+                        <div class="card__img fade">
+                            <div><img src="images/3.png" alt=""></div>
+                            <div><img src="images/5.png" alt=""></div>
+                            <div><img src="images/6.png" alt=""></div>
+                        </div>
+                        <div class="card__details">
+                            <div class="card__details-btn flex flex-jc-sb flex-ai-c">
+                                <div class="btn-left">
+                                    <a href="#">3 Network</a>
+                                    <a href="#">Family</a>
+                                </div>
+                                <div class="btn-right">
+                                    <a href="#"><i class="fa fa-heart"></i></a>
+                                </div>
+                            </div>
+                            <div class="card_header">
+                                <h4>9632 New Green Garden, Huwai Denever USA, AWE789O</h4>
+                            </div>
+                            <div class="card_icn flex flex-jc-sb">
+                                <div><a href=""><i class="fa fa-bed"></i> 2 Beds</a></div>
+                                <div><a href=""><i class="fa fa-shower"></i> 1 Bath</a></div>
+                                <div><a href=""><i class="fa fa-directions"></i> 800 sqft</a></div>
+                            </div>
+                            <div class="card_price flex flex-jc-sb flex-ai-c">
+                                <div>
+                                    <h3>$4,000</h3>
+                                </div>
+                                <div><a href="" class="button1">View Details</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__img fade">
+                        <div><img src="images/3.png" alt=""></div>
+                        <div><img src="images/2.png" alt=""></div>
+                        <div><img src="images/1.png" alt=""></div>
+                    </div>
+                    <div class="card__details">
+                        <div class="card__details-btn flex flex-jc-sb flex-ai-c">
+                            <div class="btn-left">
+                                <a href="#">10 Network</a>
+                                <a href="#">Apartment</a>
+                            </div>
+                            <div class="btn-right">
+                                <a href="#"><i class="fa fa-heart"></i></a>
+                            </div>
+                        </div>
+                        <div class="card_header">
+                            <h4>8512 Red Reveals Market, Montreal Canada, SHQT45O</h4>
+                        </div>
+                        <div class="card_icn flex flex-jc-sb">
+                            <div><a href=""><i class="fa fa-bed"></i> 3 Beds</a></div>
+                            <div><a href=""><i class="fa fa-shower"></i> 2 Bath</a></div>
+                            <div><a href=""><i class="fa fa-directions"></i> 800 sqft</a></div>
+                        </div>
+                        <div class="card_price flex flex-jc-sb flex-ai-c">
+                            <div>
+                                <h3>$5,000</h3>
+                            </div>
+                            <div><a href="" class="button1">View Details</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__img fade">
+                        <div><img src="images/5.png" alt=""></div>
+                        <div><img src="images/4.png" alt=""></div>
+                        <div><img src="images/6.png" alt=""></div>
+                    </div>
+                    <div class="card__details">
+                        <div class="card__details-btn flex flex-jc-sb flex-ai-c">
+                            <div class="btn-left">
+                                <a href="#">8 Network</a>
+                                <a href="#">Condos</a>
+                            </div>
+                            <div class="btn-right">
+                                <a href="#"><i class="fa fa-heart"></i></a>
+                            </div>
+                        </div>
+                        <div class="card_header">
+                            <h4>298 Rani Market Near Saaket, Henever Canada, QWUI98</h4>
+                        </div>
+                        <div class="card_icn flex flex-jc-sb">
+                            <div><a href=""><i class="fa fa-bed"></i> 3 Beds</a></div>
+                            <div><a href=""><i class="fa fa-shower"></i> 2 Bath</a></div>
+                            <div><a href=""><i class="fa fa-directions"></i> 800 sqft</a></div>
+                        </div>
+                        <div class="card_price flex flex-jc-sb flex-ai-c">
+                            <div>
+                                <h3>$5,000</h3>
+                            </div>
+                            <div><a href="" class="button1">View Details</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__img fade">
+                        <div><img src="images/2.png" alt=""></div>
+                        <div><img src="images/4.png" alt=""></div>
+                        <div><img src="images/6.png" alt=""></div>
+                    </div>
+                    <div class="card__details">
+                        <div class="card__details-btn flex flex-jc-sb flex-ai-c">
+                            <div class="btn-left">
+                                <a href="#">5 Network</a>
+                                <a href="#">Family</a>
+                            </div>
+                            <div class="btn-right">
+                                <a href="#"><i class="fa fa-heart"></i></a>
+                            </div>
+                        </div>
+                        <div class="card_header">
+                            <h4>C12 Shine Sehu Street, Liverpool London, LC345AC</h4>
+                        </div>
+                        <div class="card_icn flex flex-jc-sb">
+                            <div><a href=""><i class="fa fa-bed"></i> 1 Beds</a></div>
+                            <div><a href=""><i class="fa fa-shower"></i> 2 Bath</a></div>
+                            <div><a href=""><i class="fa fa-directions"></i> 1200 sqft</a></div>
+                        </div>
+                        <div class="card_price flex flex-jc-sb flex-ai-c">
+                            <div>
+                                <h3>$7,000</h3>
+                            </div>
+                            <div><a href="" class="button1">View Details</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- listing section end -->
+
+    <!-- agent section start -->
+    <section class="agentPage" id="contact">
+        <div class="container">
+            <div class="header flex flex-jc-c flex-ai-c">
+                <h2>Our Featured Agents</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nulla non ex quam molestias rerum
+                    doloribus sunt velit voluptates repellendus?</p>
+            </div>
+            <div class="autoplay list flex flex-jc-sa flex-ai-c ">
+
+                <div class="dpCard">
+                    <div class="dpPhoto">
+                        <img src="images/dp.jpg" alt="">
+                    </div>
+                    <div class="dpDetails">
+                        <p><i class="fa fa-map-pin"></i>Dallas, USA</p>
+                        <p>Harjeet J. Sillar</p>
+                    </div>
+                    <div class="dpSocial">
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                    </div>
+                    <div class="dpBtn">
+                        <a href=""><i class="fa fa-envelope"></i>Message</a>
+                        <a href=""><i class="fa fa-phone"></i></a>
+                    </div>
+                </div>
+
+                <div class="dpCard">
+                    <div class="dpPhoto">
+                        <img src="images/dp1.jpg" alt="">
+                    </div>
+                    <div class="dpDetails">
+                        <p><i class="fa fa-map-pin"></i>Toranto, CANADA</p>
+                        <p>Adam K. Jolio</p>
+                    </div>
+                    <div class="dpSocial">
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                    </div>
+                    <div class="dpBtn">
+                        <a href=""><i class="fa fa-envelope"></i>Message</a>
+                        <a href=""><i class="fa fa-phone"></i></a>
+                    </div>
+                </div>
+
+                <div class="dpCard">
+                    <div class="dpPhoto">
+                        <img src="images/dp5.jpg" alt="">
+                    </div>
+                    <div class="dpDetails">
+                        <p><i class="fa fa-map-pin"></i>Montrel, CANADA</p>
+                        <p>Micheal P. Grimaldo</p>
+                    </div>
+                    <div class="dpSocial">
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                    </div>
+                    <div class="dpBtn">
+                        <a href=""><i class="fa fa-envelope"></i>Message</a>
+                        <a href=""><i class="fa fa-phone"></i></a>
+                    </div>
+                </div>
+
+                <div class="dpCard">
+                    <div class="dpPhoto">
+                        <img src="images/dp4.jpg" alt="">
+                    </div>
+                    <div class="dpDetails">
+                        <p><i class="fa fa-map-pin"></i>New York, USA</p>
+                        <p>Anna K. Young</p>
+                    </div>
+                    <div class="dpSocial">
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                    </div>
+                    <div class="dpBtn">
+                        <a href=""><i class="fa fa-envelope"></i>Message</a>
+                        <a href=""><i class="fa fa-phone"></i></a>
+                    </div>
+                </div>
+
+                <div class="dpCard">
+                    <div class="dpPhoto">
+                        <img src="images/dp3.jpg" alt="">
+                    </div>
+                    <div class="dpDetails">
+                        <p><i class="fa fa-map-pin"></i>Mumbai, IND</p>
+                        <p>Sargam S. Singh</p>
+                    </div>
+                    <div class="dpSocial">
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                    </div>
+                    <div class="dpBtn">
+                        <a href=""><i class="fa fa-envelope"></i>Message</a>
+                        <a href=""><i class="fa fa-phone"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- agent section end -->
+
+    <!-- location section start -->
+    <section class="locationPage" id="property">
+        <div class="container">
+            <div class="header flex flex-jc-c flex-ai-c">
+                <h2>Explore By Location</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nulla non ex quam molestias rerum
+                    doloribus sunt velit voluptates repellendus?</p>
+            </div>
+            <div class="list flex flex-ai-c flex-jc-sa">
+                <div class="lCard flex flex-ai-c flex-jc-c">
+                    <div class="lDetails">
+                        <p>New Orlens, Louisiana</p>
+                        <p>12 Villa &nbsp&nbsp 10 Apartment &nbsp&nbsp 07 office</p>
+                    </div>
+                </div>
+                <div class="lCard flex flex-ai-c flex-jc-c">
+                    <div class="lDetails">
+                        <p>New Orlens, Louisiana</p>
+                        <p>12 Villa &nbsp&nbsp 10 Apartment &nbsp&nbsp 07 office</p>
+                    </div>
+                </div>
+                <div class="lCard flex flex-ai-c flex-jc-c">
+                    <div class="lDetails">
+                        <p>Jerrsy, United State</p>
+                        <p>05 Villa &nbsp&nbsp 10 Apartment &nbsp&nbsp 15 office</p>
+                    </div>
+                </div>
+                <div class="lCard flex flex-ai-c flex-jc-c">
+                    <div class="lDetails">
+                        <p>Liverpool, London</p>
+                        <p>02 Villa &nbsp&nbsp 20 Apartment &nbsp&nbsp 02 office</p>
+                    </div>
+                </div>
+                <div class="lCard flex flex-ai-c flex-jc-c">
+                    <div class="lDetails">
+                        <p>NewYork, United State</p>
+                        <p>03 Villa &nbsp&nbsp 05 Apartment &nbsp&nbsp 07 office</p>
+                    </div>
+                </div>
+                <div class="lCard flex flex-ai-c flex-jc-c">
+                    <div class="lDetails">
+                        <p>Ontario, Canada</p>
+                        <p>30 Villa &nbsp&nbsp 50 Apartment &nbsp&nbsp 40 office</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- location section end  -->
+
+    <!-- testimonial section start -->
+    <section class="testiPage">
+        <div class="container">
+            <div class="header flex flex-jc-c flex-ai-c">
+                <h2>Good Reviews By Clients</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nulla non ex quam molestias rerum
+                    doloribus sunt velit voluptates repellendus?</p>
+            </div>
+
+            <div class="list flex flex-jc-c flex-ai-c tAutoplay">
+                <div>
+                    <div class="tCard flex flex-jc-c flex-ai-c">
+                        <div class="tPhoto">
+                            <img src="images/dp.jpg" alt="">
+                        </div>
+                        <div class="tDetails">
+                            <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. At soluta repudiandae, optio
+                                et
+                                perspiciatis vel omnis iure nobis quo minima."</p>
+                            <p>Jesse L. Westberg</p>
+                            <p>CEO, Leader</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="tCard flex flex-jc-c flex-ai-c">
+                        <div class="tPhoto">
+                            <img src="images/dp1.jpg" alt="">
+                        </div>
+                        <div class="tDetails">
+                            <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. At soluta repudiandae, optio
+                                et albert
+                                perspiciatis vel omnis iure nobis quo minima."</p>
+                            <p>Ankit B. Detroja</p>
+                            <p>CEO, Leader</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="tCard flex flex-jc-c flex-ai-c">
+                        <div class="tPhoto">
+                            <img src="images/dp4.jpg" alt="">
+                        </div>
+                        <div class="tDetails">
+                            <p>"Dolor sit, amet consectetur adipisicing elit. At soluta repudiandae, optio
+                                et
+                                perspiciatis vel omnis iure nobis quo minima."</p>
+                            <p>Monica S.</p>
+                            <p>Sr.Engineer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="tCard flex flex-jc-c flex-ai-c">
+                        <div class="tPhoto">
+                            <img src="images/dp5.jpg" alt="">
+                        </div>
+                        <div class="tDetails">
+                            <p>"Amet consectetur adipisicing elit. At soluta repudiandae, optio
+                                et Lorem, ipsum.
+                                perspiciatis vel omnis iure nobis quo minima."</p>
+                            <p>Jesica K. Paul</p>
+                            <p>Manager, cisco</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- testimonal section end -->
+
+    <!-- link slick js -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick/slick.min.js"></script>
+    <!-- link main.js -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

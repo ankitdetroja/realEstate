@@ -1,0 +1,19 @@
+@media (max-width: 600px) {
+  .header {
+    p {
+      width: 100%;
+    }
+  }
+
+  .landingPage__content {
+    margin-top: 5rem;
+  }
+
+  .searchBar-price,
+  .searchBar-loaction,
+  .searchBar-type,
+  .searchBar-filter {
+    flex: 0 0 100%;
+    margin: 5px 0;
+  }
+}

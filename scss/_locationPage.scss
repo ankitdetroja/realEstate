@@ -1,0 +1,87 @@
+.locationPage {
+  min-height: 100vh;
+  padding-top: 3.5rem;
+  padding-bottom: 1.5rem;
+
+  .container {
+    max-width: 1250px;
+  }
+
+  .list {
+    margin: 30px 0;
+  }
+
+  .lCard {
+    cursor: pointer;
+    width: 370px;
+    height: 310px;
+    margin-bottom: 20px;
+    background: linear-gradient(
+        to bottom,
+        rgba(38, 41, 51, 0.61),
+        rgba(69, 74, 94, 0.459)
+      ),
+      url(../images/loc.jpg) repeat 100%;
+    background-size: cover;
+    border-radius: 10px;
+
+    &:nth-child(2) {
+      background: linear-gradient(
+          to bottom,
+          rgba(38, 41, 51, 0.61),
+          rgba(69, 74, 94, 0.459)
+        ),
+        url(../images/loc2.jpg) repeat 100%;
+      background-size: cover;
+    }
+    &:nth-child(3) {
+      background: linear-gradient(
+          to bottom,
+          rgba(38, 41, 51, 0.61),
+          rgba(69, 74, 94, 0.459)
+        ),
+        url(../images/loc3.png) repeat 100%;
+      background-size: cover;
+    }
+    &:nth-child(4) {
+      background: linear-gradient(
+          to bottom,
+          rgba(38, 41, 51, 0.61),
+          rgba(69, 74, 94, 0.459)
+        ),
+        url(../images/loc4.png) repeat 100%;
+      background-size: cover;
+    }
+    &:nth-child(5) {
+      background: linear-gradient(
+          to bottom,
+          rgba(38, 41, 51, 0.61),
+          rgba(69, 74, 94, 0.459)
+        ),
+        url(../images/loc5.png) repeat 100%;
+      background-size: cover;
+    }
+    &:nth-child(6) {
+      background: linear-gradient(
+          to bottom,
+          rgba(38, 41, 51, 0.61),
+          rgba(69, 74, 94, 0.459)
+        ),
+        url(../images/loc6.png) repeat 100%;
+      background-size: cover;
+    }
+
+    .lDetails {
+      text-align: center;
+      color: $white;
+      font-weight: 500;
+      font-size: 16px;
+
+      P {
+        &:first-child {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
